@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      </ion-buttons>  
+      <ion-title>Feedback</ion-title>
+   
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content >
+  <form >
+    <ion-grid>
+      <ion-row justify-content-center>
+          <ion-col  align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div text-center>
+            
+            </div>
+              <div padding >
+                  <ion-item>
+                    <ion-icon name="person"></ion-icon> <ion-input type="text" placeholder="Name"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label>Class</ion-label>
+                      <ion-select interface="popover">
+                          <ion-select-option value="FY">First Year</ion-select-option>
+                          <ion-select-option value="SY">Second Year</ion-select-option>
+                          <ion-select-option value="TY">Third Year</ion-select-option>
+                      </ion-select>
+                  </ion-item>
+                  <ion-item>
+                      <ion-input type="text" placeholder="UID" required></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label>Do you want <br>submission <br>notification?</ion-label>
+                      <ion-toggle slot="end" name="notification"  color="primary"></ion-toggle>
+                  </ion-item>
+                <br>
+                <p style="margin-left:15px;"><b>Tick mark the features you have found in the app asethetically pleasinng</b></p>
+                <ion-list>
+                  <ion-item>
+                    <ion-label>Simplicity</ion-label>
+                    <ion-checkbox color="primary" slot="start"></ion-checkbox>
+                  </ion-item>
+                  <ion-item>
+                    <ion-checkbox color="primary"  slot="start"></ion-checkbox>
+                    <ion-label>Transparency</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-checkbox color="primary"  slot="start"></ion-checkbox>
+                    <ion-label>Immersion</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-checkbox color="primary" slot="start"></ion-checkbox>
+                    <ion-label>Positive first <br>impresion</ion-label>
+                  </ion-item>
+                  
+                  
+                </ion-list>
+                <ion-item>
+                  <ion-textarea placeholder="Comment ..."></ion-textarea>
+                </ion-item><br><br>
+                <ion-button  style="margin-left:15px;"size="medium"  type="submit" expand="block" (click)="toast()">Submit</ion-button>
+              </div>
+              
+               
+
+        </ion-col>
+    </ion-row>
+</ion-grid>
+</form>
+

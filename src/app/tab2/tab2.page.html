@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      </ion-buttons>  
+    <ion-title> 
+      <h4>Dashboard</h4>
+    </ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <body>
+  
+  <div>
+    <div class="div1">
+      <div onclick="window.open('https:/www.spit.ac.in', '_system', 'location=yes'); return false;">
+        <ion-icon name="mic"></ion-icon>
+        <p><b>Announcement</b></p>
+      </div>
+     
+  
+
+    </div>
+     <div class="div2" (click)="nextpage()">
+      <div>
+        <ion-icon name="clock"></ion-icon>
+        <p><b>Timetable</b></p>
+      </div>
+
+     </div>
+     <br>
+
+     <div class="div3">
+      <div>
+        <ion-icon name="book"></ion-icon>
+        <p><b>Exam</b></p>
+      </div>
+    </div>
+     <div class="div4" (click)="attendpage()">
+      <div>
+        <ion-icon name="list-box"></ion-icon>
+        <p><b>Attendance</b></p>
+      </div>
+
+     </div>
+  </div>
+  </body>
+</ion-content>
